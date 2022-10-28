@@ -7,20 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class regsiter extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_regsiter);
+        setContentView(R.layout.activity_login);
 
-        TextView btn=findViewById(R.id.textView2);
+        TextView btn=findViewById(R.id.textViewSignUp);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(regsiter.this,LoginActivity.class));
+                startActivity(new Intent(LoginActivity.this,regsiter.class));
 
             }
         });
+
     }
 }
